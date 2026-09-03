@@ -1,8 +1,308 @@
-<html>
-	<body style="background-color: darkblue;">
-		<img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fmacduff111.github.io%2Fmacduff111%2F&label=Visits&color=%23198754">
-		<h1 style="color: gold; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 48;">
-			Jonathan Mackenzie
-		</h1>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jonathan Mackenzie</title>
+	<style>
+		:root {
+			font-family:'Courier New', Courier, monospace;
+			line-height: 1.6;
+			color: #111;
+			margin: 0;
+			padding: 0;
+			background-color: #000;
+
+			--color1: #232927;
+			--color2: #F5F8ED;
+			--color3: #c0de3b;
+			--color4: #f74166;
+		}
+		:root a {color: var(--color2);}
+
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0;
+			min-height: 100vh;
+			/* background: #CBCBC9; */
+		}
+		.page-wrapper {
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+		header {
+			/* padding: 3rem 3rem;
+			text-align: left;
+			color: var(--color2);
+			background-color: var(--color1);
+			border: 20px solid var(--color2);
+			border-bottom: 0px; */
+			color: var(--color2);
+			background-color: var(--color1);
+			padding: 3rem 1.5rem;
+			width: 100vw;
+			margin-left: calc(50% - 50vw);
+			margin-right: calc(50% - 50vw);
+			border: 20px solid var(--color2);
+			border-bottom: 0px;
+		}
+		header h1 {
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			margin: 0;
+			font-size: clamp(1.75rem, 3vw, 2.5rem);
+			color: var(--color3)
+			/* text-decoration:underline; */
+			/* font-style: italic;
+			font-weight:900; */
+		}
+		.project-section {
+			padding: 3rem 1.5rem;
+			width: 100vw;
+			margin-left: calc(50% - 50vw);
+			margin-right: calc(50% - 50vw);
+			border: 20px solid var(--color2);
+			border-bottom: 0px;
+		}
+
+		.project-section .section-inner {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1.5rem;
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 1.5rem;
+			box-sizing: border-box;
+		}
+		.project-section .project-copy {
+			flex: 1 1 320px;
+			/* min-width: 280px; */
+		}
+		.project-section .project-images {
+			flex: 1 1 320px;
+			/* min-width: 280px; */
+			display: grid;
+			gap: 0.75rem;
+			/* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+			align-items: start;
+		}
+		.project-section img {
+			width: 100%;
+			height: auto;
+			display: block;
+			border-radius: 0.3rem;
+			object-fit: cover;
+		}
+		.project-section video {
+			width: 100%;
+			height: auto;
+			display: block;
+			border-radius: 0.3rem;
+			object-fit: cover;
+		}
+		.project-section h2 {
+			margin-top: 0;
+			margin-bottom: 0.5rem;
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			font-size: clamp(1.5rem, 3vw, 2.5rem);
+			color: var(--color3);
+		}
+		.project-meta {
+			margin: 1rem 0 2rem;
+			font-size: 1rem;
+			font-weight: 600;
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+		}
+		.project-copy p a {
+			/* margin: 0.5rem; */
+			max-width: 60ch;
+		}
+		.project-one {
+			background-color: var(--color1);
+			color: var(--color2);
+		}
+		.project-two {
+			background: var(--color3);
+			color: var(--color2);
+		}
+		.project-two a {color: var(--color2);}
+
+		@media (max-width: 800px) {
+			.project-section {
+				padding: 2rem 1rem;
+			}
+			.project-section .project-images,
+			.project-section .project-copy {
+				flex: 1 1 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="page-wrapper">
+		<!-- <header> -->
+		<section class="project-section project-one">
+			<div class="section-inner">
+			<div class="project-copy">
+			<h2>Jonathan Mackenzie</h2>
+			<p>I have worked for over 30 years as both an artist and scientist on a wide range of research projects using computers to model, visualise and create with complex systems.</p>
+
+			<p>I am particularly interested in the role of form in autopoietic, or self-making, systems and how it is created, maintained and evolves both materially and culturally.</p>
+			<!-- <p>I am currently making digital art and music using generative systems based on these ideas.</p> -->
+			<a href="https://scholar.google.com/citations?user=7DNhviQAAAAJ&hl=en">Publications</a>
+			<a href="exhibitions.html">Exhibitions</a>
+			<a href="mailto:contact@jonathanmackenzie.net">contact@jonathanmackenzie.net</a>
+			</div>
+			<div class="project-images">
+			<img src="me_by_kay_hartest.jpg" style="width: 50%;">
+			</div>
+			</div>
+			</section>
+		<!-- </header> -->
+		<section class="project-section project-one">
+			<div class="section-inner">
+			<div class="project-copy">
+				<h2> Materializing Data</h2>
+				<p class="project-meta">
+				Manifest Data Lab, Central Saint Martins, University of the Arts London, 2019-21</p>
+				<p>An interdisciplinary research project exploring climate data and the carbon system through 3D printed objects in collaboration with the British Antarctic Survey.</p>
+				<p>The project sought to explore the affective and critical possibilities of climate data manifested in material form. </p>
+				<a href="https://www.atmospheric-collective.org/">www.atmospheric-collective.org</a>
+			</div>
+			<div class="project-images">
+				<img src="onassis_stegi.png">
+			</div>
+		</section>
+		<section class="project-section project-one">
+			<div class="section-inner">
+			<div class="project-copy">
+				<h2>Stem Cell Imaging</h2>
+				<p class="project-meta">
+					Genetics Dept, Cambridge University, 2012-2015</p>
+					<p>Working with the <a href="https://www.cam.ac.uk/taxonomy/people/alfonso-martinez-arias">Martinez-Arias lab</a> to analyse microscope imagery with AI image processing techniques to help build models of emergent cellular behaviour in early embryo development. Modified cells carrying fluorescent markers are used to display genetic states as the cells make decisions according to chemical signals and local context. Videos of the cells are then segmented and tracked using a bespoke Python AI software pipeline.</p>
+				<p></p>
+			</div>
+			<div class="project-images">
+				<img src="embryoids2.png">
+			</div>
+		</section>	
+		<section class="project-section project-one">
+			<div class="section-inner">
+			<div class="project-copy">
+				<h2>Southern Ocean Studies</h2>
+				<p class="project-meta">
+					University of Westminster & British Antarctic Survey 2009</p>
+					<p>The Southern Ocean Studies is part of a series of projects produced with assistance from our partners the British Antarctic Survey, which aims to explore how Climate Models can function as expressive visual and conceptual representations of climate change beyond their original scientific contexts and purpose, i.e. as art media with expressive, conceptual and critical potential. In doing so it presents a possible model of practice for a digital and networked art that seeks to reflect upon the intersections between culture and the technological and cognitive infrastructure of the science of climate change.</p>
+					<p>With <a href="https://baily.net/southern-ocean-studies/">Gavin Baily</a> and <a href="https://tomcorby.com/">Tom Corby</a>. </p>
+			</div>
+			<div class="project-images">
+				<img src="floating_points_ambica_p3_exhibition_076.jpg">
+			</div>
+		</section>
+		<section class="project-section project-one">
+			<div class="section-inner">
+			<div class="project-copy">
+				<h2>Modelling Plant Morphogenesis</h2>
+				<p class="project-meta">
+					<a href="https://www.haseloff-lab.info/">Haseloff Lab</a>, Dept of Plant Sciences, Cambridge University, 2004-2006</p>
+					<p>Developing software models of plant morphogenesis using self-organising cellular systems integrating spatial, mechanical, chemical and genetic properties. The work shows how plant form emerges within the feedback of processes across multiple related domains.</p>
+			</div>
+			<div class="project-images">
+				<img src="Ablation_total.bmp">
+				<!-- <img src="choleochaete.jpg">
+				<img src="cell_modeller2.jpg">
+				<img src="evocell.jpg">-->
+				<img src="circular_causality.jpg">
+
+			</div>
+		</section>
+		
+	<section class="project-section project-one">
+			<div class="section-inner">
+			<div class="project-copy">
+				<h2>Maelstrom</h2>
+				<p class="project-meta">
+					Kettle's Yard/CARET/Junction/Crucible New Technology Arts Fellowship, Cambridge, 2002</p>
+
+				<p>A collaboration with artist Mark Palmer and the Cambridge Fluid Dynamics Laboratory to develop interactive models of turbulent systems.</p>
+			</div>
+			<div class="project-images">
+				<img src="turbulence03.jpg">
+
+			</div>
+		</section>
+		
+	<section class="project-section project-one">
+			<div class="section-inner">
+			<div class="project-copy">
+				<h2>Neuroscope/Mesh</h2>
+				<p class="project-meta">
+					Wellcome Trust SciArt Prize, 2000</p>
+				<p>With <a href="https://baily.net/">Gavin Baily</a></p>
+				<p>An art science collaboration which focuses on self-organising systems as models for how personal experience of culture interfaces with culture itself as a process of mutual feedback. We built software to scrape images from a personal computer and the internet while structuring a 3D model of the process sorting and growing over time. </p>
+				<p>See <a href="https://baily.net/mesh/">Mesh</a></p>
+
+			</div>
+			<div class="project-images">
+				<img src="neuroscope-image003.jpg">
+
+			</div>
+		</section>
+
+	<section class="project-section project-one">
+			<div class="section-inner">
+			<div class="project-copy">
+				<h2>Neural Net Starfish</h2>
+				<p class="project-meta">
+					Millenium Dome Mind Zone,
+					Royal College of Art, 1999</p>
+
+					<p>
+					Artificial Life installation illustrating creature-like behaviour exhibited by simulated neural networks and physics. Made with Richard Brown and <a href="https://baily.net/">Gavin Baily</a>
+					</p>
+
+			</div>
+			<div class="project-images">
+				<img src="starfish01.jpg">
+
+			</div>
+		</section>
+		
+	<section class="project-section project-one">
+			<div class="section-inner">
+			<div class="project-copy">
+				<h2>Art at the Edge of Chaos</h2>
+				<p class="project-meta">
+					The Laboratory, Ruskin School of Art, Oxford, 1997</p>
+					<p>The project explored how ideas from complex systems theory such as the edge of chaos and autopoiesis might relate to organic forms. The edge of chaos identifies a region of dynamic systems that is between being ordered and repetitive, and disordered and random. Autopoiesis is a description of living and cultural systems revealing the networks of mutual, self-making relationships that constitute such systems.</p>
+					<p>I wrote software where dynamic forms emerged when networks of relationships were fine-tuned to be between order and chaos.</p>
+			</div>
+			<div class="project-images">
+				<video controls src="agents_python_01.mp4">
+
+			</div>
+		</section>
+
+	<section class="project-section project-one" style="border-bottom: 20px solid var(--color2);">
+			<div class="section-inner">
+			<div class="project-copy">
+				<h2>Using Strange Attractors to Model Sound</h2>
+				<p class="project-meta">
+				PhD, Sound Engineering Lab, King's College London, 1994</p>
+				<p>This work investigates the possibility of applying nonlinear dynamical systems theory to the problem of modelling sound with a computer. The particular interest is in the creative use of sound, where its representation, generation and manipulation are important issues. A specific application, for example, is the modelling of environmental sound for film sound-tracks. </p>
+				<p>Recently, there have been a number of major advances in the field of nonlinear dynamical systems which include chaos theory and fractal geometry. It is argued that these provide a rich source of ideas and techniques relevant to the issues of modelling sound. One such idea is that complex behaviour may be generated from simple systems. Such behaviour can often replicate a wide range of natural phenomena, or is of interest in its own right because of its aesthetic appeal. This has been demonstrated often through computer generated images and so an equivalent is sought in the audio domain. This work is believed to be the first substantial attempt at this.</p>
+				<p>I turned some of the resulting models into commercially available software.</p>
+			</div>
+			<div class="project-images">
+				<!-- <img src="strange_icon_512.png"> -->
+				<video controls src="Strange Attractor.mp4">
+			</div>
+		</section>
+
+	</div>
+</body>
 </html>
