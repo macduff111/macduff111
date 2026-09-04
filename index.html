@@ -80,6 +80,9 @@
 		.project-section .project-copy {
 			flex: 1 1 320px;
 			/* min-width: 280px; */
+			/* allow long words/URLs to wrap instead of overflowing the border */
+			overflow-wrap: anywhere;
+			word-break: break-word;
 		}
 		.project-section .project-images {
 			flex: 1 1 320px;
@@ -120,6 +123,11 @@
 		.project-copy p a {
 			/* margin: 0.5rem; */
 			max-width: 60ch;
+		}
+		.project-copy a {
+			/* ensure anchors outside of paragraphs also wrap */
+			overflow-wrap: anywhere;
+			word-break: break-word;
 		}
 		.project-one {
 			background-color: var(--color1);
